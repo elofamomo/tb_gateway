@@ -1,0 +1,23 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 9988
+    servlet:
+        context-path: /light_api
+#主配置
+spring:
+    profiles:
+        active: pro
+    mvc:
+        view:
+            prefix: /WEB-INF/
+            suffix: .html 
+
+
+
+
+    
+    

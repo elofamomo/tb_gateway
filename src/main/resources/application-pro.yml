@@ -1,0 +1,19 @@
+info:
+  name: 灯控制器-通讯服务-例子
+  contact: ylkj-light-api        
+                        
+emq:
+   receive:
+      url: tcp://115.78.92.253:28883
+      startPassword: true
+      username: admin
+      password: admin
+      clientId: receive_service_0000_emq_gkk_9001_test
+      startOn: true
+      empTopic: apiTest/SHLJ_1/data
+   send:
+      clientId: send_service_0000_emq_gkk_9001
+      startOn: true
+      empTopic: client             
+                        
+                        
